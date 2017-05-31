@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.bar.BarController">
-	<!-- TODO Add Nodes -->
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="it.polito.tdp.bar.BarController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <TextArea fx:id="result" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+         <top>
+            <Button fx:id="btnCallcola" mnemonicParsing="false" onAction="#calcola" text="calcola" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="12.0" />
+               </BorderPane.margin>
+            </Button>
+         </top>
+      </BorderPane>
+   </center>
 </BorderPane>
